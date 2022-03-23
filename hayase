@@ -407,6 +407,19 @@ div.filter-group > span.active[data-v-310d8b7e] {
 .banner-content:hover > .name-wrapper > .name {
   opacity: 1;
 }
+.banner-content > .follower-badge {
+  position: absolute;
+  bottom: var(--hokaze-bctc);
+  margin: 0;
+  padding: 11.5px 10px;
+  transition: var(--hokaze-at);
+}
+.banner-content > .follower-badge:hover {
+  background: rgba(var(--color-blue),1);
+}
+.banner-content:hover > .follower-badge {
+  transform: translateX(-170px);
+}
 
 /* Hides Reviews + Submissions */
 .nav .link:nth-child(7), .nav .link:nth-child(8) {
@@ -508,35 +521,6 @@ div.filter-group > span.active[data-v-310d8b7e] {
 div.header-wrap > div.nav-wrap > div > a:nth-child(7),
 div.header-wrap > div.nav-wrap > div > a:nth-child(8) {
     display: none;
-}
-
-/* Hey, ::after is pretty cool wouldn't you say :3 */
-
-/* Following Button */
-.nav-btn[data-v-5445dac8] > span:nth-child(1)::after {
-    visibility: visible;
-    content: ' :)';
-    background: transparent;
-    font-family: 'Comic Sans MS';
-}
-
-.nav-btn[data-v-5445dac8] > span:nth-child(2)::after {
-    visibility: visible;
-    content: ' :(';
-}
-
-/* Follower Tag */
-.mod-badge.follower-badge { visibility: hidden; }
-.mod-badge.follower-badge::before {
-    visibility: visible;
-    left: 6px;
-    content: 'You\'re Cute :)';
-    position: relative;
-    padding: 5px 8px;
-    border-radius: 0px 0px 4px 4px;
-    background: rgba(var(--nagatoro-color-1),.8);
-    color: rgb(var(--color-white));
-    font-family: 'Comic Sans MS';
 }
 
 /* Fix Stupid Padding */
@@ -1233,28 +1217,13 @@ html {
     scrollbar-width: thin;
     scrollbar-color: rgb(250,197,132) rgba(0, 0, 0, 0.95);
 }
-
-/* Pinned */
-.hohPinned > .wrap > .text > .header,
-.hohPinned > .wrap > .actions,
-.hohPinned > .wrap > .time {
-    display: none;
-}
-.hohPinned > .wrap,
-.hohPinned > .wrap > .text > .activity-markdown {
-    border-bottom: 0;
-}
-.hohPinned > .wrap > .text {
-    padding: 5px;
-}
-.hohPinned > .wrap > .text > .activity-markdown > .markdown,
-.hohPinned > .wrap > .text > .activity-markdown > .markdown > p {
-    margin: 0;
-}
-.hohPinned > .wrap {
+/* Footer */
+.footer {
     background: transparent !important;
-    border-radius: 45px !important;
 }
+.theme-selector {
+    display: none;
+
 
 /* Score Overview */
 .highlight .icon[data-v-72dc5b51] {
@@ -1340,12 +1309,4 @@ html {
 .label-wrap[data-v-26dc9635]:last-of-type {
     margin-bottom: 0;
     background: rgb(var(--nagatoro-color-1)) !important;
-}
-
-/* Footer */
-.footer {
-    background: transparent !important;
-}
-.theme-selector {
-    display: none;
 }
