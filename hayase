@@ -26,7 +26,7 @@
     --cp-accent-color-dim: 250,197,13 !important;
     --color-blue: rgb(var(--nagatoro-color-2))!important;
     /* General Settings */
-    --color-blue: rgb(var(--nagatoro-color-2))!important;
+  --color-blue: rgb(var(--nagatoro-color-2)) !important;
   --color-blue-dim: var(--cp-accent-color-dim) !important;
   --tr: 0, 0, 0, 0.15 !important;
   --pointer: url(https://files.catbox.moe/yvb75a.png) 10 10, move !important;
@@ -53,20 +53,16 @@
   --hokaze-lr: 0px;     /* Anilist Logo Border Radius */
   --hokaze-ls: 1.2;     /* Anilist Logo Hover Scaling */
   --color-footer-background: 0, 0, 0;
-  --cp-accent-color: 173,79,56 !important;
-  --cp-accent-color-dim: 250,197,13 !important;
   --color-text-lighter: 225,225,225 !important;
   --nagatoro-color-1: 173,79,56 !important;
   --nagatoro-color-2: 250,197,132 !important;
   --nagatoro-color-3: 102,62,49 !important;
-  --color-blue: rgb(var(--nagatoro-color-2))!important;
   --color-blue-light: 165,189,201 !important;
   --color-white: 255, 255, 255 !important;
   --color-black: 22, 19 ,19 !important;
   --color-black-grey: 54, 45, 45 !important;
   --color-yellow: 125, 71, 158 !important;
   --color-text: 255,255,255 !important;
-  --color-foreground: 173, 79, 56 !important;
  --hokaze-bs: rgba(0, 0, 0, 0.07) 0px 1px 2px, /* Box Shadow */
                rgba(0, 0, 0, 0.07) 0px 2px 4px,
                rgba(0, 0, 0, 0.07) 0px 4px 8px,
@@ -80,11 +76,11 @@
     --spotfy-border: 2px solid rgb(var(--nagatoro-color-2));
     --spotfy-font-title: 1.4rem; /*don't change the font size if you have the same as the original*/
     /* Untouched */
-    --color-foreground-blue: 15,22,31;
+/*     --color-foreground-blue: 15,22,31; */
     --color-foreground-blue-dark: 6,12,19;
-    --color-text: 159,173,189;
+/*     --color-text: 159,173,189; */
     --color-text-light: 114,138,161;
-    --color-text-lighter: 133,150,165;
+/*     --color-text-lighter: 133,150,165; */
     --color-shadow-blue: 0,5,15;
     --color-background-1200: 251,251,251;
     --color-background-1100: 240,243,246;
@@ -279,7 +275,7 @@ div.filter-group > span.active[data-v-310d8b7e] {
   box-shadow:none!important;
 }
 .link[data-v-4fbac4e1] {
-  color: rbga(var(--color-text)) !important;
+  color: rgba(var(--color-text)) !important;
 }
 .links > .link:hover {
   color: rgb(var(--nagatoro-color-1)) !important;
@@ -358,7 +354,7 @@ div.filter-group > span.active[data-v-310d8b7e] {
 .nav > .router-link-active::after {
   left: 0;
   width: 100%;
-  background: rgb(var(cp-accent-color)) !important;
+  background: rgb(var(--cp-accent-color)) !important;
 }
 .nav-wrap .nav .link {
     color: rgb(var(--color-text)) !important;
@@ -596,14 +592,14 @@ div.header-wrap > div.nav-wrap > div > a:nth-child(8) {
     content: '';
     mask: url('https://i.imgur.com/KIoS2u2.png') no-repeat 50% 50%;
     -webkit-mask: url('https://i.imgur.com/KIoS2u2.png') no-repeat 50% 50%;
-    mask-size: cover;
+/*     mask-size: cover; */
     -webkit-mask-size: auto;
     position: absolute;
     padding: 60px 67px;
     background-color: var(--spotfy-logo-color);
     margin-left: 330px;
     margin-top: -33px;
-    overflow: overlay;
+/*     overflow: overlay; */
     transform: scale(0.3);
     z-index: 3;
 }
@@ -722,7 +718,7 @@ div.header-wrap > div.nav-wrap > div > a:nth-child(8) {
 }
 .activity-text >.wrap>.text>.header>.name:hover,
 .activity-message>.wrap>.text>.header>.name:hover {
-  transform: scale(120%);
+  transform: scale(1.2);
 }
 .activity-message > .wrap > .text > .header > .avatar,
 .activity-text > .wrap > .text > .header > .avatar {
@@ -733,8 +729,8 @@ div.header-wrap > div.nav-wrap > div > a:nth-child(8) {
 }
 .activity-message>.wrap>.text>.header>.avatar:hover,
 .activity-text >.wrap>.text>.header>.avatar:hover {
-  transform: scale(120%) rotate(360deg);
-  border-color: 1px solid white !important;
+  transform: scale(1.2) rotate(360deg);
+  border: 1px solid white !important;
 }
 .activity-edit > .el-textarea > .el-textarea__inner,
 .activity-edit > .el-textarea, 
@@ -770,7 +766,6 @@ a[href="/user/kiyume/"]:not(.avatar):not(.user):not(.link):not(.primary-link) {
     width: 150px ;
     white-space: nowrap !important;
     overflow: hidden;
-    white-space: nowrap !important;
     text-overflow: ellipsis ;
     transition: 1s;
 }
@@ -841,7 +836,7 @@ div.lists > div.actions > div > span.active > svg > path {
 }
 .list-editor-wrap .el-input__inner, .list-editor-wrap .el-textarea__inner {
     background: rgb(var(--color-blue-dark));
-    border: 1pxsolid #a5bdc9;
+    border: 1px solid #a5bdc9;
     width: 100%;
     box-shadow: none;
 }
@@ -903,7 +898,7 @@ div.lists > div.actions > div > span.active > svg > path {
     width: 16px;
     height: 16px;
     border: 2px solid #ad4f38;
-    background-color: fac584;
+    background-color: #fac584;
     border-radius: 50%;
     transition: .2s;
     -webkit-user-select: none;
@@ -959,7 +954,7 @@ div.lists > div.actions > div > span.active > svg > path {
 el-input-group__append, .el-input-group__prepend, .el-input__inner, .el-textarea__inner {
     background: rgb(0,0,0,0.5);
     border: 0;
-    box-shadow: 0;
+    box-shadow: none;
     color: rgb(var(--color-text));
 }
 .medialist.cards .entry-card .progress, .medialist.cards .entry-card .score {
@@ -968,13 +963,14 @@ el-input-group__append, .el-input-group__prepend, .el-input__inner, .el-textarea
 }
 
 /* Activity Title-overflow fixed */
-@media (min-width: 1540px)
+@media (min-width: 1540px) {
   .list.small > div > div.status > a {
     white-space: nowrap;
     width: 230px;
     overflow: hidden;
     display: block;
     text-overflow: ellipsis;
+	}
 }
 
 /* Load More */
@@ -982,7 +978,6 @@ el-input-group__append, .el-input-group__prepend, .el-input__inner, .el-textarea
   margin-top: 0;
   background: rgb(var(--nagatoro-color-1)) !important;
   color: white;
-  font-size: 'Uppercase';
   text-align: center;
   text-transform: uppercase;
 }
@@ -1006,7 +1001,7 @@ el-input-group__append, .el-input-group__prepend, .el-input__inner, .el-textarea
 
 /* LIST STATS */
 .stats-wrap[data-v-5c30286e] {
-    margin-right: 0us activity;
+    margin-right: 0px;
 }
 .section>.stats-wrap {
     display: grid;
@@ -1017,10 +1012,11 @@ el-input-group__append, .el-input-group__prepend, .el-input__inner, .el-textarea
     grid-template-columns: auto auto;
     grid-column-gap: 30px !important;
 }
-@media (max-width: 1540px)
-.stats-wrap[data-v-5c30286e] {
+@media (max-width: 1540px) {
+	.stats-wrap[data-v-5c30286e] {
     grid-template-columns: 1fr;
     grid-column-gap: 0;
+	}
 }
 .stats-wrap[data-v-5c30286e] {
     display: grid;
@@ -1165,7 +1161,7 @@ extras-dropdown .el-dropdown-link[data-v-b584a8de] {
 	color: #0000;
 	stroke: rgb(var(--color-white));
 	stroke-width: 70;
-	stroke-alignment: inner;
+/* 	stroke-alignment: inner; */
 	font-size: 0.870em;
 	padding-bottom: 0.08em;
 	padding-top: 0.05em;
@@ -1223,7 +1219,8 @@ html {
 }
 .theme-selector {
     display: none;
-*Modified HohPinned*/
+}
+/*Modified HohPinned*/
 
 .hohPinned.activity-text 
 > div 
@@ -1350,4 +1347,53 @@ display: none !important;
 .label-wrap[data-v-26dc9635]:last-of-type {
     margin-bottom: 0;
     background: rgb(var(--nagatoro-color-1)) !important;
+}
+
+/* anzu */
+/* fixes weird link shit (was broke cuz of to big padding and margin) */
+.header-wrap .nav-wrap a.link {
+	margin: 0 10px;
+	padding: 15px;
+	left: 0;
+}
+
+/* fixes follower badge and follow button */
+.banner-content > .avatar {
+  z-index: 100;
+}
+.banner-content > .actions,
+.banner-content > .name-wrapper {
+  position: absolute;
+}
+.banner-content:hover > .actions {
+  transform: translateX(183px);
+}
+.actions,
+.banner-content > .follower-badge {
+	transition: all .4s ease;
+}
+
+/* name position and shadow */
+.banner-content > .name-wrapper {
+  transform: translate(-4.5vh, 0vh);
+	z-index: 110;
+}
+.banner-content > .name-wrapper > .name {
+	text-shadow: 1px 1px 5px black;
+}
+
+/* remove background from avatar and only round bottom corners */
+.container > .banner-content > .avatar {
+	background-color: unset;
+	border-radius: 0 0 100% 100%;
+}
+
+/* re-add background as pseudo element and round it to make the ears pop out */
+.container > .banner-content::before {
+	content: '';
+  position: absolute;
+	height: 250px;
+	width: 250px;
+	background-color: rgba(var(--tr));
+	border-radius: 100%;
 }
