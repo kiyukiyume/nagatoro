@@ -29,7 +29,7 @@
   --color-blue: rgb(var(--nagatoro-color-2)) !important;
   --color-blue-dim: var(--cp-accent-color-dim) !important;
   --tr: 0, 0, 0, 0.15 !important;
-  --pointer: url(https://files.catbox.moe/yvb75a.png) 10 10, move !important;
+  --pointer: url(https://files.catbox.moe/hxn4z8.png) move !important;
   --hokaze-br: 10px; /* Global Border Radius */
   --hokaze-pv: 30px; /* Vertical Content Padding */
   --hokaze-ph: 30px; /* Horizontal Content Padding */
