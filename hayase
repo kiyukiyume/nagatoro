@@ -163,7 +163,7 @@ label[for],
 select,
 button,
 .pointer {
-    cursor: url(https://files.catbox.moe/sr0ii2.png), auto;
+    cursor: url(https://files.catbox.moe/hxn4z8.png), auto;
 }
 a,
 a:link img {
