@@ -1223,6 +1223,47 @@ html {
 }
 .theme-selector {
     display: none;
+*Modified HohPinned*/
+
+.hohPinned.activity-text 
+> div 
+> div.text 
+> div.header {
+display: none !important;
+}
+
+.hohPinned.activity-text > div > div.text > div.activity-markdown {
+border-bottom: 0 !important;
+}
+.hohPinned .time {
+display: none !important;
+}
+
+.hohPinned.activity-text > div > div.text > div.header {
+display: none !important;
+}
+
+.hohPinned .action {
+display: none !important;
+}
+
+.hohPinned.activity-text 
+> div 
+> div.text 
+> div.activity-markdown 
+> div {
+    margin-bottom: 0 !important;
+}
+.hohPinned.activity-text:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    background: transparent;
+    bottom: 26px;
+    left: 0%;
+    right: 0px;
+    min-height: 300px;
+}
 
 
 /* Score Overview */
